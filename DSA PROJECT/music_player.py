@@ -85,7 +85,7 @@ class MusicPlayer:
         print("\nPlaylist:")
         temp = self.head
         while temp:
-            marker = "👉" if temp == self.current else "  "
+            marker = "=>" if temp == self.current else "  "
             print(f"{marker} {temp.name}")
             temp = temp.next
         print()
@@ -137,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
